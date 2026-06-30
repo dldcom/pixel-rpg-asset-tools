@@ -1,0 +1,137 @@
+{
+  "id": "society-building-spritesheet-5x5",
+  "cellWidth": 256,
+  "cellHeight": 220,
+  "cols": 5,
+  "rows": 5,
+  "image": "building-spritesheet-5x5.png",
+  "generatedFrom": "building-spritesheet-5x5-source.png",
+  "cropGutter": 14,
+  "buildings": [
+    {
+      "id": "bakery",
+      "col": 0,
+      "row": 0
+    },
+    {
+      "id": "cafeteria",
+      "col": 1,
+      "row": 0
+    },
+    {
+      "id": "stationery-shop",
+      "col": 2,
+      "row": 0
+    },
+    {
+      "id": "convenience-store",
+      "col": 3,
+      "row": 0
+    },
+    {
+      "id": "theater",
+      "col": 4,
+      "row": 0
+    },
+    {
+      "id": "hair-salon",
+      "col": 0,
+      "row": 1
+    },
+    {
+      "id": "parcel-center",
+      "col": 1,
+      "row": 1
+    },
+    {
+      "id": "packing-room",
+      "col": 2,
+      "row": 1
+    },
+    {
+      "id": "bus-stop",
+      "col": 3,
+      "row": 1
+    },
+    {
+      "id": "school",
+      "col": 4,
+      "row": 1
+    },
+    {
+      "id": "flower-shop",
+      "col": 0,
+      "row": 2
+    },
+    {
+      "id": "library",
+      "col": 1,
+      "row": 2
+    },
+    {
+      "id": "small-market",
+      "col": 2,
+      "row": 2
+    },
+    {
+      "id": "bus-depot",
+      "col": 3,
+      "row": 2
+    },
+    {
+      "id": "hospital-clinic",
+      "col": 4,
+      "row": 2
+    },
+    {
+      "id": "academy",
+      "col": 0,
+      "row": 3
+    },
+    {
+      "id": "toy-shop",
+      "col": 1,
+      "row": 3
+    },
+    {
+      "id": "beauty-salon",
+      "col": 2,
+      "row": 3
+    },
+    {
+      "id": "bank",
+      "col": 3,
+      "row": 3
+    },
+    {
+      "id": "post-office",
+      "col": 4,
+      "row": 3
+    },
+    {
+      "id": "community-center",
+      "col": 0,
+      "row": 4
+    },
+    {
+      "id": "apartment-entrance",
+      "col": 1,
+      "row": 4
+    },
+    {
+      "id": "craft-workshop",
+      "col": 2,
+      "row": 4
+    },
+    {
+      "id": "music-store",
+      "col": 3,
+      "row": 4
+    },
+    {
+      "id": "snack-kiosk",
+      "col": 4,
+      "row": 4
+    }
+  ]
+}
