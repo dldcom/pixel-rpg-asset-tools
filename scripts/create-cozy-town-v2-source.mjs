@@ -1,11 +1,11 @@
-import fs from 'node:fs';
+﻿import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
 
 const root = path.resolve(import.meta.dirname, '..');
 const out = path.join(root, 'tilesets/cozy-town/source/cozy-town-sheet-v2.png');
 const W = 256;
-const H = 256;
+const H = 128;
 const T = 32;
 const buf = Buffer.alloc(W * H * 4, 0);
 
@@ -29,36 +29,37 @@ function rect(x, y, w, h, color) {
 }
 
 function grass(ox, oy, salt = 0, bias = 0) {
-  rect(ox, oy, T, T, rgba(96 + bias, 154 + bias, 78 + bias));
+  const base = [104 + bias, 158 + bias, 82 + bias];
+  rect(ox, oy, T, T, rgba(...base));
   for (let y = 0; y < T; y += 1) {
     for (let x = 0; x < T; x += 1) {
       const n = noise(ox + x, oy + y, salt);
-      if (n < 9) put(ox + x, oy + y, rgba(72 + bias, 129 + bias, 70 + bias));
-      else if (n > 93) put(ox + x, oy + y, rgba(126 + bias, 177 + bias, 83 + bias));
-      else if ((x + salt) % 9 === 0 && n > 72) put(ox + x, oy + y, rgba(84 + bias, 143 + bias, 72 + bias));
+      if (n < 7) put(ox + x, oy + y, rgba(90 + bias, 145 + bias, 76 + bias));
+      else if (n > 94) put(ox + x, oy + y, rgba(119 + bias, 172 + bias, 88 + bias));
+      else if ((x + salt) % 11 === 0 && n > 78) put(ox + x, oy + y, rgba(98 + bias, 151 + bias, 78 + bias));
     }
   }
-  for (let i = 0; i < 7; i += 1) {
+  for (let i = 0; i < 5; i += 1) {
     const x = ((i * 11 + salt * 3) % 29) + 1;
     const y = ((i * 7 + salt * 5) % 29) + 1;
-    put(ox + x, oy + y, rgba(142, 188, 92));
-    put(ox + x + 1, oy + y, rgba(76, 132, 69));
+    put(ox + x, oy + y, rgba(130, 180, 92));
+    put(ox + x + 1, oy + y, rgba(93, 145, 75));
   }
 }
 
-function dirt(ox, oy) {
-  rect(ox, oy, T, T, rgba(164, 118, 70));
+function dirt(ox, oy, salt = 4, bias = 0) {
+  rect(ox, oy, T, T, rgba(166 + bias, 118 + bias, 72 + bias));
   for (let y = 0; y < T; y += 1) {
     for (let x = 0; x < T; x += 1) {
-      const n = noise(ox + x, oy + y, 4);
-      if (n < 12) put(ox + x, oy + y, rgba(130, 91, 60));
-      else if (n > 88) put(ox + x, oy + y, rgba(193, 143, 85));
+      const n = noise(ox + x, oy + y, salt);
+      if (n < 11) put(ox + x, oy + y, rgba(139 + bias, 96 + bias, 62 + bias));
+      else if (n > 89) put(ox + x, oy + y, rgba(190 + bias, 139 + bias, 83 + bias));
     }
   }
   for (let x = 3; x < 30; x += 7) {
     const y = 7 + ((x * 3) % 17);
-    put(ox + x, oy + y, rgba(112, 77, 56));
-    put(ox + x + 1, oy + y, rgba(190, 141, 86));
+    put(ox + x, oy + y, rgba(125 + bias, 84 + bias, 58 + bias));
+    put(ox + x + 1, oy + y, rgba(184 + bias, 135 + bias, 82 + bias));
   }
 }
 
@@ -125,8 +126,42 @@ function shadow(ox, oy, x, y, w, h) {
 
 function edgeTile(col, row, kind, edge) {
   const [ox, oy] = origin(col, row);
+  if (kind === 'dirt') {
+    dirt(ox, oy, 8 + col + row, (col % 3) - 1);
+    const dark = rgba(122, 82, 56);
+    const light = rgba(194, 144, 88);
+    if (edge === 'top') {
+      rect(ox, oy, 32, 2, dark);
+      rect(ox, oy + 2, 32, 1, light);
+    }
+    if (edge === 'right') {
+      rect(ox + 30, oy, 2, 32, dark);
+      rect(ox + 29, oy, 1, 32, light);
+    }
+    if (edge === 'bottom') {
+      rect(ox, oy + 30, 32, 2, dark);
+      rect(ox, oy + 29, 32, 1, light);
+    }
+    if (edge === 'left') {
+      rect(ox, oy, 2, 32, dark);
+      rect(ox + 2, oy, 1, 32, light);
+    }
+    if (edge === 'tl') {
+      rect(ox, oy, 32, 2, dark);
+      rect(ox, oy, 2, 32, dark);
+    }
+    if (edge === 'tr') {
+      rect(ox, oy, 32, 2, dark);
+      rect(ox + 30, oy, 2, 32, dark);
+    }
+    if (edge === 'br') {
+      rect(ox, oy + 30, 32, 2, dark);
+      rect(ox + 30, oy, 2, 32, dark);
+    }
+    return;
+  }
   grass(ox, oy, 20 + col + row);
-  const color = kind === 'water' ? rgba(61, 132, 160) : rgba(164, 118, 70);
+  const color = rgba(61, 132, 160);
   if (edge === 'top') rect(ox, oy + 8, 32, 24, color);
   if (edge === 'right') rect(ox, oy, 24, 32, color);
   if (edge === 'bottom') rect(ox, oy, 32, 24, color);
@@ -138,7 +173,6 @@ function edgeTile(col, row, kind, edge) {
     const x = (i * 7 + col) % 32;
     const y = (i * 11 + row * 3) % 32;
     if (kind === 'water' && noise(ox + x, oy + y, 9) > 65) put(ox + x, oy + y, rgba(96, 176, 188));
-    if (kind === 'dirt' && noise(ox + x, oy + y, 8) > 45) put(ox + x, oy + y, rgba(130, 91, 60));
   }
 }
 
@@ -232,7 +266,7 @@ function barrel(ox, oy) {
 
 for (let col = 0; col < 8; col += 1) {
   const [ox, oy] = origin(col, 0);
-  grass(ox, oy, col, col === 6 ? 10 : col === 7 ? -12 : 0);
+  grass(ox, oy, col, [-2, 1, 0, 2, -1, 1, 3, -3][col]);
 }
 for (const item of [[9, 11], [22, 8], [16, 23]]) flower(origin(3, 0)[0] + item[0], origin(3, 0)[1] + item[1], rgba(225, 95, 100));
 for (const item of [[8, 15], [18, 9], [24, 22]]) {
@@ -241,7 +275,7 @@ for (const item of [[8, 15], [18, 9], [24, 22]]) {
 }
 rect(origin(5, 0)[0], origin(5, 0)[1] + 21, 32, 11, rgba(52, 94, 64, 130));
 
-dirt(...origin(0, 1));
+dirt(...origin(0, 1), 4, 0);
 ['top', 'right', 'bottom', 'left', 'tl', 'tr', 'br'].forEach((edge, index) => edgeTile(index + 1, 1, 'dirt', edge));
 
 for (let col = 0; col < 8; col += 1) {
@@ -355,3 +389,5 @@ await sharp(buf, { raw: { width: W, height: H, channels: 4 } })
   .toFile(out);
 
 console.log(`[create-cozy-town-v2-source] ${path.relative(root, out)}`);
+
+
