@@ -17,6 +17,7 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import sharp from 'sharp';
+import { logOptimizeRows, optimizeFilesInPlace } from './lib/asset-optimizer';
 
 type TileKind = 'ground' | 'path' | 'water' | 'edge' | 'object' | 'decoration' | 'utility';
 type CollisionShape = 'none' | 'full' | 'bottom' | 'custom';
@@ -211,6 +212,7 @@ async function main() {
   const sourcePath = args[1];
   const manifestPath = getOpt(args, '--manifest');
   const preview = parseBoolArg(getOpt(args, '--preview'), true);
+  const optimize = parseBoolArg(getOpt(args, '--optimize'), true);
 
   if (!id || !sourcePath) {
     console.error(
@@ -281,6 +283,15 @@ async function main() {
   console.log(`[import-tileset] tiles: ${tiles.length} files -> ${path.relative(PROJECT_ROOT, tilesDir)}`);
   console.log(`[import-tileset] json: ${path.relative(PROJECT_ROOT, jsonPath)}`);
   if (preview) console.log(`[import-tileset] preview: ${path.relative(PROJECT_ROOT, previewPath)}`);
+  if (optimize) {
+    const tileFiles = tiles.map((tile) => path.join(tilesDir, `${tile.id}.png`));
+    const rows = await optimizeFilesInPlace(
+      [sheetPath, preview ? previewPath : "", ...tileFiles],
+      undefined,
+      PROJECT_ROOT
+    );
+    logOptimizeRows('import-tileset', rows);
+  }
 }
 
 main().catch((e) => {

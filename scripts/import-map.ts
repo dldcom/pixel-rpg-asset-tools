@@ -16,6 +16,7 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import sharp from 'sharp';
+import { logOptimizeRows, optimizeFilesInPlace } from './lib/asset-optimizer';
 
 type ResizeFit = 'cover' | 'contain' | 'fill';
 type TileRect = { col: number; row: number; w: number; h: number };
@@ -275,6 +276,7 @@ async function main() {
   const fit = parseResizeFit(getOpt(args, '--fit'));
   const quality = parseBoundedInt(getOpt(args, '--quality'), JPG_QUALITY, '--quality', 50, 100);
   const preview = parseBoolArg(getOpt(args, '--preview'), true);
+  const optimize = parseBoolArg(getOpt(args, '--optimize'), true);
 
   if (!id || !sourcePath) {
     console.error(
@@ -324,6 +326,14 @@ async function main() {
   );
 
   if (preview) await writePreview(jpgPath, id);
+  if (optimize) {
+    const rows = await optimizeFilesInPlace(
+      [jpgPath, preview ? path.join(MAPS_DIR, `${id}-preview.jpg`) : ""],
+      undefined,
+      PROJECT_ROOT
+    );
+    logOptimizeRows('import-map', rows);
+  }
 
   console.log(`[import-map] OK ${id}`);
   for (const s of config.spawns) {

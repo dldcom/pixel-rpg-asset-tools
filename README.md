@@ -48,6 +48,7 @@ Useful options:
 --target-height 50
 --preview true
 --frames true
+--optimize true
 ```
 
 ## Item Import
@@ -75,6 +76,7 @@ Useful options:
 --fit contain|cover
 --kernel nearest|lanczos3
 --preview true
+--optimize true
 ```
 
 ## Map Import
@@ -138,6 +140,7 @@ Useful options:
 --fit cover|contain|fill
 --quality 85
 --preview true
+--optimize true
 ```
 
 ## Tileset Import
@@ -165,6 +168,7 @@ Useful options:
 --rows 8
 --manifest tilesets/cozy-town/manifest.example.json
 --preview true
+--optimize true
 ```
 
 The manifest assigns stable tile ids and metadata:
@@ -214,7 +218,9 @@ Useful options:
 --webp-threshold 300000
 ```
 
-The optimizer writes an `optimization-report.json` with before/after sizes. For PNG files, it keeps the PNG if the optimized copy is smaller and also creates WebP candidates for large PNGs.
+The import scripts run lightweight in-place optimization by default after generating images. Pass `--optimize false` to skip it.
+
+The standalone optimizer writes an `optimization-report.json` with before/after sizes. For PNG files, it keeps the PNG if the optimized copy is smaller and also creates WebP candidates for large PNGs.
 
 ## Recommended Workflow
 

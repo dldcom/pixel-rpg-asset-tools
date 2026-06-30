@@ -36,6 +36,7 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import sharp from 'sharp';
+import { logOptimizeRows, optimizeFilesInPlace } from './lib/asset-optimizer';
 
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 const FRAME_W = 48;
@@ -1040,6 +1041,7 @@ async function main() {
   const rowOrder = parseRowOrder(getOpt('--row-order'));
   const writeFrames = parseBoolArg(getOpt('--frames'), true);
   const writePreviewImage = parseBoolArg(getOpt('--preview'), true);
+  const optimize = parseBoolArg(getOpt('--optimize'), true);
 
   if (!id || !sourcePath) {
     console.error(
@@ -1109,6 +1111,22 @@ async function main() {
 
   if (writeFrames) await writeFramePngs(id, outDir);
   if (writePreviewImage) await writePreview(id, outDir);
+  if (optimize) {
+    const atlasPath = path.join(outDir, `${id}.png`);
+    const previewPath = path.join(outDir, `${id}-preview.png`);
+    const framesDir = path.join(outDir, `${id}-frames`);
+    const frameFiles = writeFrames && fs.existsSync(framesDir)
+      ? fs.readdirSync(framesDir)
+        .filter((file) => file.toLowerCase().endsWith('.png'))
+        .map((file) => path.join(framesDir, file))
+      : [];
+    const rows = await optimizeFilesInPlace(
+      [atlasPath, writePreviewImage ? previewPath : "", ...frameFiles],
+      undefined,
+      PROJECT_ROOT
+    );
+    logOptimizeRows('import-character', rows);
+  }
 }
 
 main().catch((e) => {

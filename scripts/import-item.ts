@@ -12,6 +12,7 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import sharp from 'sharp';
+import { logOptimizeRows, optimizeFilesInPlace } from './lib/asset-optimizer';
 
 type RGB = { r: number; g: number; b: number };
 type ResizeFit = 'contain' | 'cover';
@@ -204,6 +205,7 @@ async function main() {
   const fit = parseFit(getOpt(args, '--fit'));
   const kernel = parseKernel(getOpt(args, '--kernel'));
   const preview = parseBoolArg(getOpt(args, '--preview'), true);
+  const optimize = parseBoolArg(getOpt(args, '--optimize'), true);
 
   if (!id || !sourcePath) {
     console.error('Usage: npx tsx scripts/import-item.ts <id> <source-image> [--name "표시명"] [--size 32]');
@@ -233,6 +235,14 @@ async function main() {
 
   const json = buildItemJson(id, name);
   fs.writeFileSync(path.join(outDir, `${id}.json`), JSON.stringify(json, null, 2));
+  if (optimize) {
+    const rows = await optimizeFilesInPlace(
+      [pngPath, preview ? path.join(outDir, `${id}-preview.png`) : ""],
+      undefined,
+      PROJECT_ROOT
+    );
+    logOptimizeRows('import-item', rows);
+  }
   console.log(`[import-item] ${id}.json 생성 완료`);
 }
 
