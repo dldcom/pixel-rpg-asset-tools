@@ -184,6 +184,38 @@ The manifest assigns stable tile ids and metadata:
 
 If no manifest is provided, the importer splits every grid cell as `tile_<row>_<col>`.
 
+## Source Assets And Optimization
+
+Use `source-assets/` as the asset workshop. Put original images, generated source sheets, prompts, and project-specific source material there.
+
+```text
+source-assets/
+  society-4-1-2-2/
+    src-assets/
+      buildings/
+      characters/
+      maps/
+      tilesets/
+```
+
+Generate optimized runtime copies into `output/` without overwriting the source files:
+
+```bash
+npm run optimize:assets -- source-assets/society-4-1-2-2/src-assets --out output/society-4-1-2-2/assets
+```
+
+Useful options:
+
+```bash
+--png-quality 88
+--jpg-quality 84
+--webp-quality 84
+--webp true
+--webp-threshold 300000
+```
+
+The optimizer writes an `optimization-report.json` with before/after sizes. For PNG files, it keeps the PNG if the optimized copy is smaller and also creates WebP candidates for large PNGs.
+
 ## Recommended Workflow
 
 1. Put raw images in `assets/raw/characters`, `assets/raw/items`, or `assets/raw/maps`.

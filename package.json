@@ -9,6 +9,7 @@
     "import:item": "tsx scripts/import-item.ts",
     "import:map": "tsx scripts/import-map.ts",
     "import:tileset": "tsx scripts/import-tileset.ts",
+    "optimize:assets": "tsx scripts/optimize-assets.ts",
     "check": "tsc --noEmit"
   },
   "devDependencies": {
