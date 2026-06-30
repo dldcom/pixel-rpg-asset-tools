@@ -1,0 +1,13 @@
+node_modules/
+assets/characters/*.png
+assets/characters/*.json
+assets/characters/*-frames/
+assets/npcs/*.png
+assets/npcs/*.json
+assets/npcs/*-frames/
+assets/items/*.png
+assets/items/*.json
+assets/maps/*.jpg
+assets/maps/*.json
+assets/maps/*-preview.jpg
+*.log

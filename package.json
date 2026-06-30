@@ -1,0 +1,19 @@
+{
+  "name": "pixel-rpg-asset-tools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Asset import scripts for top-down pixel RPG characters, items, and maps.",
+  "type": "commonjs",
+  "scripts": {
+    "import:character": "tsx scripts/import-character.ts",
+    "import:item": "tsx scripts/import-item.ts",
+    "import:map": "tsx scripts/import-map.ts",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "sharp": "^0.34.5",
+    "tsx": "^4.20.0",
+    "typescript": "^5.6.0"
+  }
+}

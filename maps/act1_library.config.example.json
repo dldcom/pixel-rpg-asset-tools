@@ -1,0 +1,46 @@
+{
+  "actNumber": 1,
+  "spawns": [
+    {
+      "name": "player",
+      "x": 160,
+      "y": 320,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "name": "guide_npc",
+      "x": 640,
+      "y": 420,
+      "width": 32,
+      "height": 32
+    }
+  ],
+  "walls": [
+    {
+      "col": 0,
+      "row": 0,
+      "w": 40,
+      "h": 1
+    },
+    {
+      "col": 0,
+      "row": 39,
+      "w": 40,
+      "h": 1
+    },
+    {
+      "col": 0,
+      "row": 0,
+      "w": 1,
+      "h": 40
+    },
+    {
+      "col": 39,
+      "row": 0,
+      "w": 1,
+      "h": 40
+    }
+  ],
+  "overlays": []
+}
