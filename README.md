@@ -140,6 +140,50 @@ Useful options:
 --preview true
 ```
 
+## Tileset Import
+
+Use this when you generate one large tileset sheet and want to split it into named game-ready tiles.
+
+```bash
+npm run import:tileset -- cozy-town tilesets/cozy-town/source/cozy-town-sheet.png --manifest tilesets/cozy-town/manifest.example.json
+```
+
+Outputs:
+
+```text
+tilesets/cozy-town/tileset.png
+tilesets/cozy-town/tileset.json
+tilesets/cozy-town/preview.png
+tilesets/cozy-town/tiles/*.png
+```
+
+Useful options:
+
+```bash
+--tile-size 32
+--cols 8
+--rows 8
+--manifest tilesets/cozy-town/manifest.example.json
+--preview true
+```
+
+The manifest assigns stable tile ids and metadata:
+
+```json
+{
+  "tileSize": 32,
+  "cols": 8,
+  "rows": 8,
+  "tiles": [
+    { "id": "grass_0", "col": 0, "row": 0, "type": "ground" },
+    { "id": "dirt_center", "col": 0, "row": 1, "type": "path" },
+    { "id": "fence_horizontal", "col": 0, "row": 4, "type": "object", "collides": true }
+  ]
+}
+```
+
+If no manifest is provided, the importer splits every grid cell as `tile_<row>_<col>`.
+
 ## Recommended Workflow
 
 1. Put raw images in `assets/raw/characters`, `assets/raw/items`, or `assets/raw/maps`.

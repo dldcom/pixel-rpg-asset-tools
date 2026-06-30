@@ -10,4 +10,8 @@ assets/items/*.json
 assets/maps/*.jpg
 assets/maps/*.json
 assets/maps/*-preview.jpg
+tilesets/*/tileset.png
+tilesets/*/tileset.json
+tilesets/*/preview.png
+tilesets/*/tiles/
 *.log

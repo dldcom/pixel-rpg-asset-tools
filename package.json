@@ -8,6 +8,7 @@
     "import:character": "tsx scripts/import-character.ts",
     "import:item": "tsx scripts/import-item.ts",
     "import:map": "tsx scripts/import-map.ts",
+    "import:tileset": "tsx scripts/import-tileset.ts",
     "check": "tsc --noEmit"
   },
   "devDependencies": {
