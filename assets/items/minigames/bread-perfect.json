@@ -1,0 +1,8 @@
+{
+  "id": "bread-perfect",
+  "name": "Golden baked bread",
+  "itemId": "bread-perfect",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/bread-perfect.png",
+  "sourceSheet": "society-minigame-items-sheet.png"
+}

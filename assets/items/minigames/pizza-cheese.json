@@ -1,0 +1,12 @@
+{
+  "id": "pizza-cheese",
+  "name": "pizza-cheese",
+  "itemId": "pizza-cheese",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pizza-cheese.png",
+  "sourceSheet": "pizza-spritesheet.png",
+  "frame": {
+    "row": 0,
+    "col": 1
+  }
+}

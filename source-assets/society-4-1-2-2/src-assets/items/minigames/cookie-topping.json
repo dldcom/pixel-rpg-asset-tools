@@ -1,0 +1,14 @@
+{
+  "id": "cookie-topping",
+  "name": "Cookie crumble topping",
+  "itemId": "cookie-topping",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/cookie-topping.png",
+  "sourceSheet": "icecream-spritesheet.png",
+  "frame": {
+    "x": 384,
+    "y": 512,
+    "w": 384,
+    "h": 512
+  }
+}

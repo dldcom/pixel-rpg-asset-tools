@@ -1,0 +1,14 @@
+{
+  "id": "caramel-syrup",
+  "name": "Caramel syrup",
+  "itemId": "caramel-syrup",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/caramel-syrup.png",
+  "sourceSheet": "icecream-spritesheet.png",
+  "frame": {
+    "x": 1152,
+    "y": 512,
+    "w": 384,
+    "h": 512
+  }
+}

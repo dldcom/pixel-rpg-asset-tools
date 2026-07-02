@@ -1,0 +1,56 @@
+{
+  "sheetId": "pet-spritesheet",
+  "source": "pet-spritesheet-source.png",
+  "cols": 3,
+  "rows": 2,
+  "items": [
+    {
+      "id": "pet-dog",
+      "frame": {
+        "row": 0,
+        "col": 0
+      },
+      "file": "pet-dog.png"
+    },
+    {
+      "id": "pet-cat",
+      "frame": {
+        "row": 0,
+        "col": 1
+      },
+      "file": "pet-cat.png"
+    },
+    {
+      "id": "pet-rabbit",
+      "frame": {
+        "row": 0,
+        "col": 2
+      },
+      "file": "pet-rabbit.png"
+    },
+    {
+      "id": "pet-puppy",
+      "frame": {
+        "row": 1,
+        "col": 0
+      },
+      "file": "pet-puppy.png"
+    },
+    {
+      "id": "pet-tux-cat",
+      "frame": {
+        "row": 1,
+        "col": 1
+      },
+      "file": "pet-tux-cat.png"
+    },
+    {
+      "id": "pet-hamster",
+      "frame": {
+        "row": 1,
+        "col": 2
+      },
+      "file": "pet-hamster.png"
+    }
+  ]
+}

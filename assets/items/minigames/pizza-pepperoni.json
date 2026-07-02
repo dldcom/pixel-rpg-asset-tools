@@ -1,0 +1,12 @@
+{
+  "id": "pizza-pepperoni",
+  "name": "pizza-pepperoni",
+  "itemId": "pizza-pepperoni",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pizza-pepperoni.png",
+  "sourceSheet": "pizza-spritesheet.png",
+  "frame": {
+    "row": 2,
+    "col": 0
+  }
+}

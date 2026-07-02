@@ -1,0 +1,12 @@
+{
+  "id": "pet-cat",
+  "name": "pet-cat",
+  "itemId": "pet-cat",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pet-cat.png",
+  "sourceSheet": "pet-spritesheet.png",
+  "frame": {
+    "row": 0,
+    "col": 1
+  }
+}

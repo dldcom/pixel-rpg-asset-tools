@@ -1,0 +1,8 @@
+{
+  "id": "obstacle-cone",
+  "name": "Obstacle cone",
+  "itemId": "obstacle-cone",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/obstacle-cone.png",
+  "sourceSheet": "society-minigame-items-sheet.png"
+}

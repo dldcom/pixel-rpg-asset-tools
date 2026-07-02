@@ -1,0 +1,12 @@
+{
+  "id": "pizza-olive",
+  "name": "pizza-olive",
+  "itemId": "pizza-olive",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pizza-olive.png",
+  "sourceSheet": "pizza-spritesheet.png",
+  "frame": {
+    "row": 1,
+    "col": 0
+  }
+}

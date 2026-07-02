@@ -1,0 +1,14 @@
+{
+  "id": "pet-bone",
+  "name": "Pet snack bone",
+  "itemId": "pet-bone",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pet-bone.png",
+  "sourceSheet": "pet-tool-spritesheet.png",
+  "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 443,
+    "h": 443
+  }
+}

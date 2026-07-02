@@ -1,0 +1,137 @@
+{
+  "id": "icecream-spritesheet",
+  "image": "icecream-spritesheet.png",
+  "sourceImage": "icecream-spritesheet.png",
+  "columns": 4,
+  "rows": 2,
+  "sourceCell": {
+    "w": 384,
+    "h": 512
+  },
+  "outputCell": {
+    "w": 96,
+    "h": 96
+  },
+  "items": [
+    {
+      "id": "icecream-cone",
+      "name": "Waffle cone",
+      "itemId": "icecream-cone",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/icecream-cone.png",
+      "sourceSheet": "icecream-spritesheet.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 384,
+        "h": 512
+      },
+      "file": "icecream-cone.png"
+    },
+    {
+      "id": "icecream-cup",
+      "name": "Ice cream cup",
+      "itemId": "icecream-cup",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/icecream-cup.png",
+      "sourceSheet": "icecream-spritesheet.png",
+      "frame": {
+        "x": 384,
+        "y": 0,
+        "w": 384,
+        "h": 512
+      },
+      "file": "icecream-cup.png"
+    },
+    {
+      "id": "scoop-vanilla",
+      "name": "Vanilla scoop",
+      "itemId": "scoop-vanilla",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/scoop-vanilla.png",
+      "sourceSheet": "icecream-spritesheet.png",
+      "frame": {
+        "x": 768,
+        "y": 0,
+        "w": 384,
+        "h": 512
+      },
+      "file": "scoop-vanilla.png"
+    },
+    {
+      "id": "scoop-strawberry",
+      "name": "Strawberry scoop",
+      "itemId": "scoop-strawberry",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/scoop-strawberry.png",
+      "sourceSheet": "icecream-spritesheet.png",
+      "frame": {
+        "x": 1152,
+        "y": 0,
+        "w": 384,
+        "h": 512
+      },
+      "file": "scoop-strawberry.png"
+    },
+    {
+      "id": "scoop-chocolate",
+      "name": "Chocolate scoop",
+      "itemId": "scoop-chocolate",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/scoop-chocolate.png",
+      "sourceSheet": "icecream-spritesheet.png",
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "w": 384,
+        "h": 512
+      },
+      "file": "scoop-chocolate.png"
+    },
+    {
+      "id": "cookie-topping",
+      "name": "Cookie crumble topping",
+      "itemId": "cookie-topping",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/cookie-topping.png",
+      "sourceSheet": "icecream-spritesheet.png",
+      "frame": {
+        "x": 384,
+        "y": 512,
+        "w": 384,
+        "h": 512
+      },
+      "file": "cookie-topping.png"
+    },
+    {
+      "id": "cherry-topping",
+      "name": "Cherry topping",
+      "itemId": "cherry-topping",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/cherry-topping.png",
+      "sourceSheet": "icecream-spritesheet.png",
+      "frame": {
+        "x": 768,
+        "y": 512,
+        "w": 384,
+        "h": 512
+      },
+      "file": "cherry-topping.png"
+    },
+    {
+      "id": "caramel-syrup",
+      "name": "Caramel syrup",
+      "itemId": "caramel-syrup",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/caramel-syrup.png",
+      "sourceSheet": "icecream-spritesheet.png",
+      "frame": {
+        "x": 1152,
+        "y": 512,
+        "w": 384,
+        "h": 512
+      },
+      "file": "caramel-syrup.png"
+    }
+  ]
+}

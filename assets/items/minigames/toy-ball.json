@@ -1,0 +1,14 @@
+{
+  "id": "toy-ball",
+  "name": "Toy ball",
+  "itemId": "toy-ball",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/toy-ball.png",
+  "sourceSheet": "pet-tool-spritesheet.png",
+  "frame": {
+    "x": 1329,
+    "y": 0,
+    "w": 443,
+    "h": 443
+  }
+}

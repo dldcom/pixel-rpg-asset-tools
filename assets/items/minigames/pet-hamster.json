@@ -1,0 +1,12 @@
+{
+  "id": "pet-hamster",
+  "name": "pet-hamster",
+  "itemId": "pet-hamster",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pet-hamster.png",
+  "sourceSheet": "pet-spritesheet.png",
+  "frame": {
+    "row": 1,
+    "col": 2
+  }
+}

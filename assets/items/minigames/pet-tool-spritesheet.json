@@ -1,0 +1,137 @@
+{
+  "id": "pet-tool-spritesheet",
+  "image": "pet-tool-spritesheet.png",
+  "sourceImage": "pet-tool-spritesheet-source.png",
+  "columns": 4,
+  "rows": 2,
+  "sourceCell": {
+    "w": 443,
+    "h": 443
+  },
+  "outputCell": {
+    "w": 96,
+    "h": 96
+  },
+  "items": [
+    {
+      "id": "pet-bone",
+      "name": "Pet snack bone",
+      "itemId": "pet-bone",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/pet-bone.png",
+      "sourceSheet": "pet-tool-spritesheet.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 443,
+        "h": 443
+      },
+      "file": "pet-bone.png"
+    },
+    {
+      "id": "water-bowl",
+      "name": "Water bowl",
+      "itemId": "water-bowl",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/water-bowl.png",
+      "sourceSheet": "pet-tool-spritesheet.png",
+      "frame": {
+        "x": 443,
+        "y": 0,
+        "w": 443,
+        "h": 443
+      },
+      "file": "water-bowl.png"
+    },
+    {
+      "id": "pet-brush",
+      "name": "Pet brush",
+      "itemId": "pet-brush",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/pet-brush.png",
+      "sourceSheet": "pet-tool-spritesheet.png",
+      "frame": {
+        "x": 886,
+        "y": 0,
+        "w": 443,
+        "h": 443
+      },
+      "file": "pet-brush.png"
+    },
+    {
+      "id": "toy-ball",
+      "name": "Toy ball",
+      "itemId": "toy-ball",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/toy-ball.png",
+      "sourceSheet": "pet-tool-spritesheet.png",
+      "frame": {
+        "x": 1329,
+        "y": 0,
+        "w": 443,
+        "h": 443
+      },
+      "file": "toy-ball.png"
+    },
+    {
+      "id": "pet-heart",
+      "name": "Pet heart",
+      "itemId": "pet-heart",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/pet-heart.png",
+      "sourceSheet": "pet-tool-spritesheet.png",
+      "frame": {
+        "x": 0,
+        "y": 443,
+        "w": 443,
+        "h": 443
+      },
+      "file": "pet-heart.png"
+    },
+    {
+      "id": "pet-bath",
+      "name": "Pet bath",
+      "itemId": "pet-bath",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/pet-bath.png",
+      "sourceSheet": "pet-tool-spritesheet.png",
+      "frame": {
+        "x": 443,
+        "y": 443,
+        "w": 443,
+        "h": 443
+      },
+      "file": "pet-bath.png"
+    },
+    {
+      "id": "pet-bed",
+      "name": "Pet bed",
+      "itemId": "pet-bed",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/pet-bed.png",
+      "sourceSheet": "pet-tool-spritesheet.png",
+      "frame": {
+        "x": 886,
+        "y": 443,
+        "w": 443,
+        "h": 443
+      },
+      "file": "pet-bed.png"
+    },
+    {
+      "id": "pet-camera",
+      "name": "Pet camera",
+      "itemId": "pet-camera",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/pet-camera.png",
+      "sourceSheet": "pet-tool-spritesheet.png",
+      "frame": {
+        "x": 1329,
+        "y": 443,
+        "w": 443,
+        "h": 443
+      },
+      "file": "pet-camera.png"
+    }
+  ]
+}

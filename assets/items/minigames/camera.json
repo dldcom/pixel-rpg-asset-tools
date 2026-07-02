@@ -1,0 +1,8 @@
+{
+  "id": "camera",
+  "name": "Camera",
+  "itemId": "camera",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/camera.png",
+  "sourceSheet": "society-minigame-items-sheet.png"
+}

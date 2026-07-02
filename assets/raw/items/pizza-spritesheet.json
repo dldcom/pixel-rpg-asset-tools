@@ -1,0 +1,80 @@
+{
+  "sheetId": "pizza-spritesheet",
+  "source": "pizza-spritesheet-source.png",
+  "cols": 3,
+  "rows": 3,
+  "items": [
+    {
+      "id": "pizza-dough",
+      "frame": {
+        "row": 0,
+        "col": 0
+      },
+      "file": "pizza-dough.png"
+    },
+    {
+      "id": "pizza-cheese",
+      "frame": {
+        "row": 0,
+        "col": 1
+      },
+      "file": "pizza-cheese.png"
+    },
+    {
+      "id": "pizza-mushroom",
+      "frame": {
+        "row": 0,
+        "col": 2
+      },
+      "file": "pizza-mushroom.png"
+    },
+    {
+      "id": "pizza-olive",
+      "frame": {
+        "row": 1,
+        "col": 0
+      },
+      "file": "pizza-olive.png"
+    },
+    {
+      "id": "pizza-corn",
+      "frame": {
+        "row": 1,
+        "col": 1
+      },
+      "file": "pizza-corn.png"
+    },
+    {
+      "id": "pizza-tomato",
+      "frame": {
+        "row": 1,
+        "col": 2
+      },
+      "file": "pizza-tomato.png"
+    },
+    {
+      "id": "pizza-pepperoni",
+      "frame": {
+        "row": 2,
+        "col": 0
+      },
+      "file": "pizza-pepperoni.png"
+    },
+    {
+      "id": "pizza-basil",
+      "frame": {
+        "row": 2,
+        "col": 1
+      },
+      "file": "pizza-basil.png"
+    },
+    {
+      "id": "pizza-onion",
+      "frame": {
+        "row": 2,
+        "col": 2
+      },
+      "file": "pizza-onion.png"
+    }
+  ]
+}

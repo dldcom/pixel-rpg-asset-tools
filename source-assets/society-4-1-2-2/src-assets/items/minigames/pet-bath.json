@@ -1,0 +1,14 @@
+{
+  "id": "pet-bath",
+  "name": "Pet bath",
+  "itemId": "pet-bath",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pet-bath.png",
+  "sourceSheet": "pet-tool-spritesheet.png",
+  "frame": {
+    "x": 443,
+    "y": 443,
+    "w": 443,
+    "h": 443
+  }
+}

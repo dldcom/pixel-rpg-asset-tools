@@ -1,0 +1,14 @@
+{
+  "id": "bread-loaf-perfect",
+  "name": "Loaf golden baked",
+  "itemId": "bread-loaf-perfect",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/bread-loaf-perfect.png",
+  "sourceSheet": "bread-bake-sheet.png",
+  "frame": {
+    "x": 418,
+    "y": 418,
+    "w": 418,
+    "h": 418
+  }
+}

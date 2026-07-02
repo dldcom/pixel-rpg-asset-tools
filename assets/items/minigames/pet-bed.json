@@ -1,0 +1,14 @@
+{
+  "id": "pet-bed",
+  "name": "Pet bed",
+  "itemId": "pet-bed",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pet-bed.png",
+  "sourceSheet": "pet-tool-spritesheet.png",
+  "frame": {
+    "x": 886,
+    "y": 443,
+    "w": 443,
+    "h": 443
+  }
+}

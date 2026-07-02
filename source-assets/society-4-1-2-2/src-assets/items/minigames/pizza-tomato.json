@@ -1,0 +1,12 @@
+{
+  "id": "pizza-tomato",
+  "name": "pizza-tomato",
+  "itemId": "pizza-tomato",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pizza-tomato.png",
+  "sourceSheet": "pizza-spritesheet.png",
+  "frame": {
+    "row": 1,
+    "col": 2
+  }
+}

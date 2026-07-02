@@ -1,0 +1,12 @@
+{
+  "id": "robot-antenna",
+  "name": "robot-antenna",
+  "itemId": "robot-antenna",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/robot-antenna.png",
+  "sourceSheet": "robot-parts-spritesheet.png",
+  "frame": {
+    "row": 1,
+    "col": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "bread-croissant-perfect",
+  "name": "Croissant golden baked",
+  "itemId": "bread-croissant-perfect",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/bread-croissant-perfect.png",
+  "sourceSheet": "bread-bake-sheet.png",
+  "frame": {
+    "x": 418,
+    "y": 0,
+    "w": 418,
+    "h": 418
+  }
+}

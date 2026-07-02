@@ -1,0 +1,12 @@
+{
+  "id": "pet-tux-cat",
+  "name": "pet-tux-cat",
+  "itemId": "pet-tux-cat",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pet-tux-cat.png",
+  "sourceSheet": "pet-spritesheet.png",
+  "frame": {
+    "row": 1,
+    "col": 1
+  }
+}

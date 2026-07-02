@@ -1,0 +1,12 @@
+{
+  "id": "circuit-panel",
+  "name": "circuit-panel",
+  "itemId": "circuit-panel",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/circuit-panel.png",
+  "sourceSheet": "robot-parts-spritesheet.png",
+  "frame": {
+    "row": 1,
+    "col": 2
+  }
+}

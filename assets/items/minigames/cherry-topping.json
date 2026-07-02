@@ -1,0 +1,14 @@
+{
+  "id": "cherry-topping",
+  "name": "Cherry topping",
+  "itemId": "cherry-topping",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/cherry-topping.png",
+  "sourceSheet": "icecream-spritesheet.png",
+  "frame": {
+    "x": 768,
+    "y": 512,
+    "w": 384,
+    "h": 512
+  }
+}

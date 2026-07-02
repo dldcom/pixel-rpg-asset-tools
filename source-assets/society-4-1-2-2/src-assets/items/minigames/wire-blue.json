@@ -1,0 +1,8 @@
+{
+  "id": "wire-blue",
+  "name": "Blue wire",
+  "itemId": "wire-blue",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/wire-blue.png",
+  "sourceSheet": "society-minigame-items-sheet.png"
+}

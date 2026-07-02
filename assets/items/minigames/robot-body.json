@@ -1,0 +1,12 @@
+{
+  "id": "robot-body",
+  "name": "robot-body",
+  "itemId": "robot-body",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/robot-body.png",
+  "sourceSheet": "robot-parts-spritesheet.png",
+  "frame": {
+    "row": 0,
+    "col": 0
+  }
+}

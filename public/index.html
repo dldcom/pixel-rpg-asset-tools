@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Importer GUI</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Pixel Character Importer</h1>
+      <p>Transform raw 3-view assets into animated Stardew-style spritesheets.</p>
+    </header>
+
+    <main class="dashboard">
+      <!-- Sidebar / Config -->
+      <section class="panel config-panel glass">
+        <h2>1. Select Asset</h2>
+        <div class="form-group">
+          <label for="asset-select">Source Asset</label>
+          <select id="asset-select">
+            <option value="">-- Loading assets... --</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="char-id">Character ID</label>
+          <input type="text" id="char-id" placeholder="e.g. farmer">
+        </div>
+
+        <hr>
+
+        <h2>2. Remove Background</h2>
+        <div class="form-group">
+          <label for="threshold">Sensitivity (Threshold): <span id="threshold-val">30</span></label>
+          <input type="range" id="threshold" min="0" max="100" value="30">
+        </div>
+        <button id="btn-analyze" class="btn primary">Apply & Preview Background</button>
+        <div id="analyze-status" class="status-msg"></div>
+
+        <hr>
+
+        <h2>3. Final Generation</h2>
+        <p class="help-text">Adjust the Head and Leg lines on the preview image, then generate.</p>
+        <button id="btn-generate" class="btn success" disabled>Generate Spritesheet</button>
+        <div id="generate-status" class="status-msg"></div>
+      </section>
+
+      <!-- Center: Limits Editor -->
+      <section class="panel editor-panel glass">
+        <h2>Adjust Limits</h2>
+        <div class="canvas-container">
+          <!-- We will draw the 48x64 image scaled up onto this canvas -->
+          <canvas id="editor-canvas" width="480" height="640"></canvas>
+          <div class="placeholder-text" id="editor-placeholder">Run Step 2 to see the image here.</div>
+        </div>
+        <div class="editor-info">
+          <p>Head Limit: <span id="head-limit-disp">--</span></p>
+          <p>Leg Limit: <span id="leg-limit-disp">--</span></p>
+        </div>
+      </section>
+
+      <!-- Right: Preview -->
+      <section class="panel preview-panel glass">
+        <h2>Result Preview</h2>
+        <div class="preview-container">
+          <img id="result-preview" src="" alt="Spritesheet Preview" style="display: none;">
+          <div class="placeholder-text" id="result-placeholder">Generated spritesheet will appear here.</div>
+        </div>
+        <h3>Full Spritesheet</h3>
+        <div class="spritesheet-container">
+          <img id="result-spritesheet" src="" alt="Full Spritesheet" style="display: none;">
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

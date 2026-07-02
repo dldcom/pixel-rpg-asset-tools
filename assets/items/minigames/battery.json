@@ -1,0 +1,12 @@
+{
+  "id": "battery",
+  "name": "battery",
+  "itemId": "battery",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/battery.png",
+  "sourceSheet": "robot-parts-spritesheet.png",
+  "frame": {
+    "row": 1,
+    "col": 0
+  }
+}

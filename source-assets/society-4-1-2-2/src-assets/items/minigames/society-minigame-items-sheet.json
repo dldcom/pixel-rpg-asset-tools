@@ -1,0 +1,570 @@
+{
+  "id": "society-minigame-items",
+  "cellSize": 64,
+  "columns": 8,
+  "rows": 7,
+  "image": "society-minigame-items-sheet.png",
+  "items": [
+    {
+      "id": "pizza-dough",
+      "name": "Pizza dough",
+      "file": "pizza-dough.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "pizza-cheese",
+      "name": "Cheese topping",
+      "file": "pizza-cheese.png",
+      "frame": {
+        "x": 64,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "pizza-mushroom",
+      "name": "Mushroom topping",
+      "file": "pizza-mushroom.png",
+      "frame": {
+        "x": 128,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "pizza-olive",
+      "name": "Olive topping",
+      "file": "pizza-olive.png",
+      "frame": {
+        "x": 192,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "pizza-corn",
+      "name": "Corn topping",
+      "file": "pizza-corn.png",
+      "frame": {
+        "x": 256,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "pizza-tomato",
+      "name": "Tomato topping",
+      "file": "pizza-tomato.png",
+      "frame": {
+        "x": 320,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "pizza-ready",
+      "name": "Ready pizza",
+      "file": "pizza-ready.png",
+      "frame": {
+        "x": 384,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "order-ticket",
+      "name": "Order ticket",
+      "file": "order-ticket.png",
+      "frame": {
+        "x": 448,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "icecream-cone",
+      "name": "Ice cream cone",
+      "file": "icecream-cone.png",
+      "frame": {
+        "x": 0,
+        "y": 64,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "icecream-cup",
+      "name": "Ice cream cup",
+      "file": "icecream-cup.png",
+      "frame": {
+        "x": 64,
+        "y": 64,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "scoop-vanilla",
+      "name": "Vanilla scoop",
+      "file": "scoop-vanilla.png",
+      "frame": {
+        "x": 128,
+        "y": 64,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "scoop-strawberry",
+      "name": "Strawberry scoop",
+      "file": "scoop-strawberry.png",
+      "frame": {
+        "x": 192,
+        "y": 64,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "scoop-chocolate",
+      "name": "Chocolate scoop",
+      "file": "scoop-chocolate.png",
+      "frame": {
+        "x": 256,
+        "y": 64,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "cookie-topping",
+      "name": "Cookie topping",
+      "file": "cookie-topping.png",
+      "frame": {
+        "x": 320,
+        "y": 64,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "cherry-topping",
+      "name": "Cherry topping",
+      "file": "cherry-topping.png",
+      "frame": {
+        "x": 384,
+        "y": 64,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "sundae-ready",
+      "name": "Ready sundae",
+      "file": "sundae-ready.png",
+      "frame": {
+        "x": 448,
+        "y": 64,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "pet-dog",
+      "name": "Pet cafe dog",
+      "file": "pet-dog.png",
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "pet-cat",
+      "name": "Pet cafe cat",
+      "file": "pet-cat.png",
+      "frame": {
+        "x": 64,
+        "y": 128,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "pet-bone",
+      "name": "Snack bone",
+      "file": "pet-bone.png",
+      "frame": {
+        "x": 128,
+        "y": 128,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "water-bowl",
+      "name": "Water bowl",
+      "file": "water-bowl.png",
+      "frame": {
+        "x": 192,
+        "y": 128,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "pet-brush",
+      "name": "Pet brush",
+      "file": "pet-brush.png",
+      "frame": {
+        "x": 256,
+        "y": 128,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "toy-ball",
+      "name": "Toy ball",
+      "file": "toy-ball.png",
+      "frame": {
+        "x": 320,
+        "y": 128,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "heart-happy",
+      "name": "Happy heart",
+      "file": "heart-happy.png",
+      "frame": {
+        "x": 384,
+        "y": 128,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "paw-token",
+      "name": "Paw token",
+      "file": "paw-token.png",
+      "frame": {
+        "x": 448,
+        "y": 128,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "arcade-broken",
+      "name": "Broken arcade",
+      "file": "arcade-broken.png",
+      "frame": {
+        "x": 0,
+        "y": 192,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "arcade-fixed",
+      "name": "Fixed arcade",
+      "file": "arcade-fixed.png",
+      "frame": {
+        "x": 64,
+        "y": 192,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "wire-red",
+      "name": "Red wire",
+      "file": "wire-red.png",
+      "frame": {
+        "x": 128,
+        "y": 192,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "wire-blue",
+      "name": "Blue wire",
+      "file": "wire-blue.png",
+      "frame": {
+        "x": 192,
+        "y": 192,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "wire-yellow",
+      "name": "Yellow wire",
+      "file": "wire-yellow.png",
+      "frame": {
+        "x": 256,
+        "y": 192,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "button-red",
+      "name": "Red button",
+      "file": "button-red.png",
+      "frame": {
+        "x": 320,
+        "y": 192,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "arcade-lever",
+      "name": "Arcade lever",
+      "file": "arcade-lever.png",
+      "frame": {
+        "x": 384,
+        "y": 192,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "circuit-panel",
+      "name": "Circuit panel",
+      "file": "circuit-panel.png",
+      "frame": {
+        "x": 448,
+        "y": 192,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "stage-light",
+      "name": "Stage light",
+      "file": "stage-light.png",
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "microphone",
+      "name": "Microphone",
+      "file": "microphone.png",
+      "frame": {
+        "x": 64,
+        "y": 256,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "clap-icon",
+      "name": "Clap icon",
+      "file": "clap-icon.png",
+      "frame": {
+        "x": 128,
+        "y": 256,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "rhythm-note",
+      "name": "Rhythm note",
+      "file": "rhythm-note.png",
+      "frame": {
+        "x": 192,
+        "y": 256,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "camera",
+      "name": "Camera",
+      "file": "camera.png",
+      "frame": {
+        "x": 256,
+        "y": 256,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "shutter-button",
+      "name": "Shutter button",
+      "file": "shutter-button.png",
+      "frame": {
+        "x": 320,
+        "y": 256,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "photo-frame",
+      "name": "Photo frame",
+      "file": "photo-frame.png",
+      "frame": {
+        "x": 384,
+        "y": 256,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "smile-target",
+      "name": "Smile target",
+      "file": "smile-target.png",
+      "frame": {
+        "x": 448,
+        "y": 256,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "delivery-bag",
+      "name": "Delivery bag",
+      "file": "delivery-bag.png",
+      "frame": {
+        "x": 0,
+        "y": 320,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "bread-box",
+      "name": "Bread box",
+      "file": "bread-box.png",
+      "frame": {
+        "x": 64,
+        "y": 320,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "bread-raw",
+      "name": "Raw bread dough",
+      "file": "bread-raw.png",
+      "frame": {
+        "x": 128,
+        "y": 320,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "bread-perfect",
+      "name": "Golden baked bread",
+      "file": "bread-perfect.png",
+      "frame": {
+        "x": 192,
+        "y": 320,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "bread-burnt",
+      "name": "Burnt bread",
+      "file": "bread-burnt.png",
+      "frame": {
+        "x": 256,
+        "y": 320,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "goal-flag",
+      "name": "Goal flag",
+      "file": "goal-flag.png",
+      "frame": {
+        "x": 320,
+        "y": 320,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "obstacle-cone",
+      "name": "Obstacle cone",
+      "file": "obstacle-cone.png",
+      "frame": {
+        "x": 384,
+        "y": 320,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "robot-body",
+      "name": "Robot body",
+      "file": "robot-body.png",
+      "frame": {
+        "x": 448,
+        "y": 320,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "robot-head",
+      "name": "Robot head",
+      "file": "robot-head.png",
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "robot-wheel",
+      "name": "Robot wheel",
+      "file": "robot-wheel.png",
+      "frame": {
+        "x": 64,
+        "y": 384,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "battery",
+      "name": "Battery",
+      "file": "battery.png",
+      "frame": {
+        "x": 128,
+        "y": 384,
+        "w": 64,
+        "h": 64
+      }
+    }
+  ]
+}

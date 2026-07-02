@@ -1,0 +1,73 @@
+{
+  "id": "npc-town-spritesheet",
+  "frameWidth": 64,
+  "frameHeight": 96,
+  "states": [
+    "idle",
+    "talking"
+  ],
+  "npcCount": 10,
+  "image": "npc-town-spritesheet.png",
+  "frames": [
+    {
+      "npc": 0,
+      "id": "board",
+      "idle": 0,
+      "talking": 1
+    },
+    {
+      "npc": 1,
+      "id": "pizza",
+      "idle": 2,
+      "talking": 3
+    },
+    {
+      "npc": 2,
+      "id": "icecream",
+      "idle": 4,
+      "talking": 5
+    },
+    {
+      "npc": 3,
+      "id": "petcafe",
+      "idle": 6,
+      "talking": 7
+    },
+    {
+      "npc": 4,
+      "id": "game",
+      "idle": 8,
+      "talking": 9
+    },
+    {
+      "npc": 5,
+      "id": "stage",
+      "idle": 10,
+      "talking": 11
+    },
+    {
+      "npc": 6,
+      "id": "outfit",
+      "idle": 12,
+      "talking": 13
+    },
+    {
+      "npc": 7,
+      "id": "bakery",
+      "idle": 14,
+      "talking": 15
+    },
+    {
+      "npc": 8,
+      "id": "plaza",
+      "idle": 16,
+      "talking": 17
+    },
+    {
+      "npc": 9,
+      "id": "photo",
+      "idle": 18,
+      "talking": 19
+    }
+  ]
+}

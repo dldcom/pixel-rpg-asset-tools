@@ -1,0 +1,14 @@
+{
+  "id": "water-bowl",
+  "name": "Water bowl",
+  "itemId": "water-bowl",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/water-bowl.png",
+  "sourceSheet": "pet-tool-spritesheet.png",
+  "frame": {
+    "x": 443,
+    "y": 0,
+    "w": 443,
+    "h": 443
+  }
+}

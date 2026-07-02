@@ -1,0 +1,8 @@
+{
+  "id": "order-ticket",
+  "name": "Order ticket",
+  "itemId": "order-ticket",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/order-ticket.png",
+  "sourceSheet": "society-minigame-items-sheet.png"
+}

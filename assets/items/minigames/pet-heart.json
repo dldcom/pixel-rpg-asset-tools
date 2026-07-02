@@ -1,0 +1,14 @@
+{
+  "id": "pet-heart",
+  "name": "Pet heart",
+  "itemId": "pet-heart",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pet-heart.png",
+  "sourceSheet": "pet-tool-spritesheet.png",
+  "frame": {
+    "x": 0,
+    "y": 443,
+    "w": 443,
+    "h": 443
+  }
+}

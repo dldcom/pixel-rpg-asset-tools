@@ -1,0 +1,16 @@
+{
+  "id": "pizza-ready",
+  "name": "pizza-ready",
+  "itemId": "pizza-ready",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pizza-ready.png",
+  "sourceSheet": "pizza-spritesheet.png",
+  "composedFrom": [
+    "pizza-dough",
+    "pizza-cheese",
+    "pizza-tomato",
+    "pizza-pepperoni",
+    "pizza-basil",
+    "pizza-olive"
+  ]
+}

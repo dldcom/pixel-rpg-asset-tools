@@ -1,0 +1,72 @@
+{
+  "sheetId": "robot-parts-spritesheet",
+  "source": "robot-parts-spritesheet-source.png",
+  "cols": 4,
+  "rows": 2,
+  "items": [
+    {
+      "id": "robot-body",
+      "frame": {
+        "row": 0,
+        "col": 0
+      },
+      "file": "robot-body.png"
+    },
+    {
+      "id": "robot-head",
+      "frame": {
+        "row": 0,
+        "col": 1
+      },
+      "file": "robot-head.png"
+    },
+    {
+      "id": "robot-wheel-left",
+      "frame": {
+        "row": 0,
+        "col": 2
+      },
+      "file": "robot-wheel-left.png"
+    },
+    {
+      "id": "robot-wheel-right",
+      "frame": {
+        "row": 0,
+        "col": 3
+      },
+      "file": "robot-wheel-right.png"
+    },
+    {
+      "id": "battery",
+      "frame": {
+        "row": 1,
+        "col": 0
+      },
+      "file": "battery.png"
+    },
+    {
+      "id": "robot-antenna",
+      "frame": {
+        "row": 1,
+        "col": 1
+      },
+      "file": "robot-antenna.png"
+    },
+    {
+      "id": "circuit-panel",
+      "frame": {
+        "row": 1,
+        "col": 2
+      },
+      "file": "circuit-panel.png"
+    },
+    {
+      "id": "spark-plug",
+      "frame": {
+        "row": 1,
+        "col": 3
+      },
+      "file": "spark-plug.png"
+    }
+  ]
+}

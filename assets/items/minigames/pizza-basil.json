@@ -1,0 +1,12 @@
+{
+  "id": "pizza-basil",
+  "name": "pizza-basil",
+  "itemId": "pizza-basil",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pizza-basil.png",
+  "sourceSheet": "pizza-spritesheet.png",
+  "frame": {
+    "row": 2,
+    "col": 1
+  }
+}

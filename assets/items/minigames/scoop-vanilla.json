@@ -1,0 +1,14 @@
+{
+  "id": "scoop-vanilla",
+  "name": "Vanilla scoop",
+  "itemId": "scoop-vanilla",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/scoop-vanilla.png",
+  "sourceSheet": "icecream-spritesheet.png",
+  "frame": {
+    "x": 768,
+    "y": 0,
+    "w": 384,
+    "h": 512
+  }
+}

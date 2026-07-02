@@ -1,0 +1,12 @@
+{
+  "id": "robot-wheel-right",
+  "name": "robot-wheel-right",
+  "itemId": "robot-wheel-right",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/robot-wheel-right.png",
+  "sourceSheet": "robot-parts-spritesheet.png",
+  "frame": {
+    "row": 0,
+    "col": 3
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "bread-croissant-burnt",
+  "name": "Croissant burnt",
+  "itemId": "bread-croissant-burnt",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/bread-croissant-burnt.png",
+  "sourceSheet": "bread-bake-sheet.png",
+  "frame": {
+    "x": 836,
+    "y": 0,
+    "w": 418,
+    "h": 418
+  }
+}

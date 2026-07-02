@@ -1,0 +1,152 @@
+{
+  "id": "bread-bake-sheet",
+  "image": "bread-bake-sheet.png",
+  "sourceImage": "codex-clipboard-f3f0bef3-879b-446a-bd44-92f23746b969.png",
+  "columns": 3,
+  "rows": 3,
+  "sourceCell": {
+    "w": 418,
+    "h": 418
+  },
+  "outputCell": {
+    "w": 96,
+    "h": 96
+  },
+  "items": [
+    {
+      "id": "bread-croissant-raw",
+      "name": "Croissant raw dough",
+      "itemId": "bread-croissant-raw",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/bread-croissant-raw.png",
+      "sourceSheet": "bread-bake-sheet.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 418
+      },
+      "file": "bread-croissant-raw.png"
+    },
+    {
+      "id": "bread-croissant-perfect",
+      "name": "Croissant golden baked",
+      "itemId": "bread-croissant-perfect",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/bread-croissant-perfect.png",
+      "sourceSheet": "bread-bake-sheet.png",
+      "frame": {
+        "x": 418,
+        "y": 0,
+        "w": 418,
+        "h": 418
+      },
+      "file": "bread-croissant-perfect.png"
+    },
+    {
+      "id": "bread-croissant-burnt",
+      "name": "Croissant burnt",
+      "itemId": "bread-croissant-burnt",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/bread-croissant-burnt.png",
+      "sourceSheet": "bread-bake-sheet.png",
+      "frame": {
+        "x": 836,
+        "y": 0,
+        "w": 418,
+        "h": 418
+      },
+      "file": "bread-croissant-burnt.png"
+    },
+    {
+      "id": "bread-loaf-raw",
+      "name": "Loaf raw dough",
+      "itemId": "bread-loaf-raw",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/bread-loaf-raw.png",
+      "sourceSheet": "bread-bake-sheet.png",
+      "frame": {
+        "x": 0,
+        "y": 418,
+        "w": 418,
+        "h": 418
+      },
+      "file": "bread-loaf-raw.png"
+    },
+    {
+      "id": "bread-loaf-perfect",
+      "name": "Loaf golden baked",
+      "itemId": "bread-loaf-perfect",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/bread-loaf-perfect.png",
+      "sourceSheet": "bread-bake-sheet.png",
+      "frame": {
+        "x": 418,
+        "y": 418,
+        "w": 418,
+        "h": 418
+      },
+      "file": "bread-loaf-perfect.png"
+    },
+    {
+      "id": "bread-loaf-burnt",
+      "name": "Loaf burnt",
+      "itemId": "bread-loaf-burnt",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/bread-loaf-burnt.png",
+      "sourceSheet": "bread-bake-sheet.png",
+      "frame": {
+        "x": 836,
+        "y": 418,
+        "w": 418,
+        "h": 418
+      },
+      "file": "bread-loaf-burnt.png"
+    },
+    {
+      "id": "bread-cookie-raw",
+      "name": "Cookie raw dough",
+      "itemId": "bread-cookie-raw",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/bread-cookie-raw.png",
+      "sourceSheet": "bread-bake-sheet.png",
+      "frame": {
+        "x": 0,
+        "y": 836,
+        "w": 418,
+        "h": 418
+      },
+      "file": "bread-cookie-raw.png"
+    },
+    {
+      "id": "bread-cookie-perfect",
+      "name": "Cookie golden baked",
+      "itemId": "bread-cookie-perfect",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/bread-cookie-perfect.png",
+      "sourceSheet": "bread-bake-sheet.png",
+      "frame": {
+        "x": 418,
+        "y": 836,
+        "w": 418,
+        "h": 418
+      },
+      "file": "bread-cookie-perfect.png"
+    },
+    {
+      "id": "bread-cookie-burnt",
+      "name": "Cookie burnt",
+      "itemId": "bread-cookie-burnt",
+      "imageExt": "png",
+      "imagePath": "/assets/items/minigames/bread-cookie-burnt.png",
+      "sourceSheet": "bread-bake-sheet.png",
+      "frame": {
+        "x": 836,
+        "y": 836,
+        "w": 418,
+        "h": 418
+      },
+      "file": "bread-cookie-burnt.png"
+    }
+  ]
+}

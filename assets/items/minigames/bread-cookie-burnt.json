@@ -1,0 +1,14 @@
+{
+  "id": "bread-cookie-burnt",
+  "name": "Cookie burnt",
+  "itemId": "bread-cookie-burnt",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/bread-cookie-burnt.png",
+  "sourceSheet": "bread-bake-sheet.png",
+  "frame": {
+    "x": 836,
+    "y": 836,
+    "w": 418,
+    "h": 418
+  }
+}

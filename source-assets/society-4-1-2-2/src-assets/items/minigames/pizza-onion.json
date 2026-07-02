@@ -1,0 +1,12 @@
+{
+  "id": "pizza-onion",
+  "name": "pizza-onion",
+  "itemId": "pizza-onion",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pizza-onion.png",
+  "sourceSheet": "pizza-spritesheet.png",
+  "frame": {
+    "row": 2,
+    "col": 2
+  }
+}

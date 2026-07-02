@@ -1,0 +1,12 @@
+{
+  "id": "pizza-dough",
+  "name": "pizza-dough",
+  "itemId": "pizza-dough",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pizza-dough.png",
+  "sourceSheet": "pizza-spritesheet.png",
+  "frame": {
+    "row": 0,
+    "col": 0
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "bread-loaf-burnt",
+  "name": "Loaf burnt",
+  "itemId": "bread-loaf-burnt",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/bread-loaf-burnt.png",
+  "sourceSheet": "bread-bake-sheet.png",
+  "frame": {
+    "x": 836,
+    "y": 418,
+    "w": 418,
+    "h": 418
+  }
+}

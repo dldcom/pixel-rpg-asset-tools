@@ -1,0 +1,12 @@
+{
+  "id": "pizza-corn",
+  "name": "pizza-corn",
+  "itemId": "pizza-corn",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/pizza-corn.png",
+  "sourceSheet": "pizza-spritesheet.png",
+  "frame": {
+    "row": 1,
+    "col": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "bread-burnt",
+  "name": "Burnt bread",
+  "itemId": "bread-burnt",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/bread-burnt.png",
+  "sourceSheet": "society-minigame-items-sheet.png"
+}

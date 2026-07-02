@@ -1,0 +1,8 @@
+{
+  "id": "shutter-button",
+  "name": "Shutter button",
+  "itemId": "shutter-button",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/shutter-button.png",
+  "sourceSheet": "society-minigame-items-sheet.png"
+}

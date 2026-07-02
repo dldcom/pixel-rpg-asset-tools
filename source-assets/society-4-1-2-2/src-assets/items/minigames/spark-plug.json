@@ -1,0 +1,12 @@
+{
+  "id": "spark-plug",
+  "name": "spark-plug",
+  "itemId": "spark-plug",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/spark-plug.png",
+  "sourceSheet": "robot-parts-spritesheet.png",
+  "frame": {
+    "row": 1,
+    "col": 3
+  }
+}

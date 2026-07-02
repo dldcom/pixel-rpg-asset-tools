@@ -1,0 +1,14 @@
+{
+  "id": "bread-croissant-raw",
+  "name": "Croissant raw dough",
+  "itemId": "bread-croissant-raw",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/bread-croissant-raw.png",
+  "sourceSheet": "bread-bake-sheet.png",
+  "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 418,
+    "h": 418
+  }
+}

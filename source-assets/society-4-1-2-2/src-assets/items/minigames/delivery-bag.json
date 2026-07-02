@@ -1,0 +1,8 @@
+{
+  "id": "delivery-bag",
+  "name": "Delivery bag",
+  "itemId": "delivery-bag",
+  "imageExt": "png",
+  "imagePath": "/assets/items/minigames/delivery-bag.png",
+  "sourceSheet": "society-minigame-items-sheet.png"
+}
